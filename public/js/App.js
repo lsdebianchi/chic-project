@@ -120,11 +120,11 @@ App.prototype = {
     //     ' | img : ' +
     //     this.data.current_img.index
     // );
-
-    if (d == _UP) d = _DOWN;
-    else if (d == _LEFT) d = _RIGHT;
-    else if (d == _DOWN) d = _UP;
-    else if (d == _RIGHT) d = _LEFT;
+    // 
+    // if (d == _UP) d = _DOWN;
+    // else if (d == _LEFT) d = _RIGHT;
+    // else if (d == _DOWN) d = _UP;
+    // else if (d == _RIGHT) d = _LEFT;
 
     console.log(d);
     this.data.add_movement(d);

@@ -87,18 +87,18 @@ img.waiting {
 }
 #d_left {
   top: 50%;
-  left: -50%;
+  left: 150%;
 }
 #d_right {
   top: 50%;
-  left: 150%;
+  left: -50%;
 }
 #d_up {
-  top: -50%;
+  top: 150%;
   left: 50%;
 }
 #d_down {
-  top: 150%;
+  top: -50%;
   left: 50%;
 }
 

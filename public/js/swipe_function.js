@@ -3,22 +3,22 @@ var waiting = false;
 $("#t_up")
   .children("a")
   .click(function() {
-    myApp.doSwipe(_DOWN);
+    myApp.doSwipe(_UP);
   });
 $("#t_right")
   .children("a")
   .click(function() {
-    myApp.doSwipe(_LEFT);
+    myApp.doSwipe(_RIGHT);
   });
 $("#t_left")
   .children("a")
   .click(function() {
-    myApp.doSwipe(_RIGHT);
+    myApp.doSwipe(_LEFT);
   });
 $("#t_down")
   .children("a")
   .click(function() {
-    myApp.doSwipe(_UP);
+    myApp.doSwipe(_DOWN);
   });
 var ratioControlTiming = 300;
 
@@ -42,7 +42,7 @@ function shift_down() {
   if (!waiting) {
     waiting = true;
     $("#d_up").css("top", "50%");
-    $("#d_main").css("top", "150%");
+    $("#d_main").css("top", "-50%");
 
     controllRatio("#d_up");
 
@@ -59,7 +59,7 @@ function shift_right() {
   if (!waiting) {
     waiting = true;
     $("#d_left").css("left", "50%");
-    $("#d_main").css("left", "150%");
+    $("#d_main").css("left", "-50%");
 
     controllRatio("#d_left");
 
@@ -76,7 +76,7 @@ function shift_up() {
   if (!waiting) {
     waiting = true;
     $("#d_down").css("top", "50%");
-    $("#d_main").css("top", "-50%");
+    $("#d_main").css("top", "150%");
 
     controllRatio("#d_down");
 
@@ -93,7 +93,7 @@ function shift_left() {
   if (!waiting) {
     waiting = true;
     $("#d_right").css("left", "50%");
-    $("#d_main").css("left", "-50%");
+    $("#d_main").css("left", "150%");
 
     controllRatio("#d_right");
 
@@ -130,9 +130,9 @@ function openSmoothing(state) {
 }
 
 function get_place(name) {
-  if (name == "#d_up") return ["50%", "-50%"];
-  if (name == "#d_down") return ["50%", "150%"];
-  if (name == "#d_left") return ["-50%", "50%"];
-  if (name == "#d_right") return ["150%", "50%"];
+  if (name == "#d_up") return ["50%", "150%"];
+  if (name == "#d_down") return ["50%", "-50%"];
+  if (name == "#d_left") return ["150%", "50%"];
+  if (name == "#d_right") return ["-50%", "50%"];
   if (name == "#d_main") return ["50%", "50%"];
 }
