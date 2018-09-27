@@ -15,7 +15,7 @@ div.body {
   width: 100%;
   overflow: hidden;
 }
-.animClick{
+.animClick {
   transition: 0.8s;
   cursor: pointer;
 }
@@ -25,27 +25,23 @@ div.body {
 .shifter:active{
   top: -90vh;
 } */
-.animClick:active{
+.animClick:active {
   color: rgb(0, 0, 0, 0.1);
   font-size: 200%;
   transition: 0s;
-
 }
-a{
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-
-
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .unselectable {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .photo {
@@ -165,14 +161,14 @@ img.waiting {
   top: 50vh;
 }
 
-.banner{
+.banner {
   width: 100%;
   height: 100%;
   background-color: red;
   position: fixed;
   left: 0px;
   top: 0px;
-   color: gold;
+  color: gold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,4 +177,8 @@ img.waiting {
   font-weight: bold;
   font-family: sans-serif;
   font-size: 3vh;
+}
+
+#d_main {
+  pointer-events: none;
 }
