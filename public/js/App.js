@@ -1,9 +1,8 @@
-
 var W = window.innerWidth; //$(window).width();
 var H = window.innerHeight; //$(window).height();
 var CENTER = new Vec(W / 2, H / 2);
 
-console.log('new shit');
+console.log("new shit");
 
 _WAITING = 11;
 _MOVEMENT = 13;
@@ -17,7 +16,7 @@ var App = function() {
     origin: undefined,
     buffer1: 10,
     buffer2: 100,
-    offset: new Vec(0, 0),
+    offset: new Vec(0, 0)
   };
 
   this.setup();
@@ -55,27 +54,32 @@ App.prototype = {
     ///////////
   },
 
-  charging : function(){
-
+  charging: function() {
     this.charged = 0;
 
     for (var i = 0; i < this.elem_img.length; i++) {
-      if(this.elem_img[i].complete === true) this.charged++;
+      if (this.elem_img[i].complete === true) this.charged++;
     }
 
-    if(this.charged < 4){
-
-        setTimeout(function(){
+    if (this.charged < 4) {
+      setTimeout(function() {
         myApp.charging();
-        console.log('tik');
+        console.log("tik");
       }, 10);
-    }
-    else{
+    } else {
       console.log("DONE!");
-      $('#d_left').children('.img_photo').css('visibility', 'visible');
-      $('#d_up').children('.img_photo').css('visibility', 'visible');
-      $('#d_down').children('.img_photo').css('visibility', 'visible');
-      $('#d_right').children('.img_photo').css('visibility', 'visible');
+      $("#d_left")
+        .children(".img_photo")
+        .css("visibility", "visible");
+      $("#d_up")
+        .children(".img_photo")
+        .css("visibility", "visible");
+      $("#d_down")
+        .children(".img_photo")
+        .css("visibility", "visible");
+      $("#d_right")
+        .children(".img_photo")
+        .css("visibility", "visible");
     }
   },
 
@@ -99,8 +103,6 @@ App.prototype = {
   },
 
   doSwipe: function(d) {
-
-
     this.handleEnd();
     placeImage(_MAIN, new Vec(0, 0));
 
@@ -119,11 +121,12 @@ App.prototype = {
     //     this.data.current_img.index
     // );
 
-    if (d == _UP)    d = _DOWN;
-    else if (d == _LEFT)  d = _RIGHT;
-    else if (d == _DOWN)  d = _UP;
+    if (d == _UP) d = _DOWN;
+    else if (d == _LEFT) d = _RIGHT;
+    else if (d == _DOWN) d = _UP;
     else if (d == _RIGHT) d = _LEFT;
 
+    console.log(d);
     this.data.add_movement(d);
     // console.log(
     //   'finish MOVEMENT | index : ' +
@@ -191,7 +194,7 @@ App.prototype = {
     } else {
       A.swipe.offset.y = A.swipe.origin.y - touch.y;
     }
-  },
+  }
 };
 
 myApp = new App();
@@ -201,11 +204,9 @@ myApp = new App();
 //document.addEventListener('touchcancel', myApp.handleCancel, false);
 //document.addEventListener('touchmove', myApp.handleMove, false);
 
+document.addEventListener("touchstart", function() {}, true);
 
-
-document.addEventListener("touchstart", function(){}, true);
-
-console.log('READY');
+console.log("READY");
 // console.log('---------------------------');
 
 //////

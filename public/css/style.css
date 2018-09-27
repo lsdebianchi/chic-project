@@ -122,11 +122,17 @@ img.waiting {
   /* border-style: dashed;
   border-color: rgb(180, 180, 180);
   border-width: 0.5px; */
+  pointer-events: none;
+}
+.text a {
+  pointer-events: auto;
 }
 .ver a {
   position: relative;
   padding-bottom: 18px;
   padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .hor a {
   position: relative;
