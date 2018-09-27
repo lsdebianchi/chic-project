@@ -7,9 +7,9 @@ i5   : { name : 'img5.jpg',   tags : ['ARCHITECTURE', 'WINDOWS', 'STREET', 'RAIN
 i6   : { name : 'img6.jpg',   tags : ['ARCHITECTURE', 'WINDOWS', 'TRANSFORMERS', 'NIGHT'] },
 i7   : { name : 'img7.jpg',   tags : ['ARCHITECTURE', 'SHINY', 'TRANSFORMERS', 'TOWER'] },
 i8   : { name : 'img8.jpg',   tags : ['ARCHITECTURE', 'WORKSHOP', 'VEGETAL', 'PATTERN'] },
-i9   : { name : 'img9.jpg',   tags : ['BIKE', 'TOWER', 'TRANSPORT', 'BLUE'] },
+i9   : { name : 'img9.jpg',   tags : ['BIKE', 'STACK', 'TRANSPORT', 'BLUE'] },
 i10  : { name : 'img10.jpg',  tags : ['CAMERAS', 'BOTTLE', 'SHOP', 'MONITORING'] },
-i11  : { name : 'img11.jpg',  tags : ['CAMERAS', 'METRO', 'COUPLE', 'HALL'] },
+i11  : { name : 'img11.jpg',  tags : ['CAMERAS', 'METRO', 'SHINY', 'HALL'] },
 i12  : { name : 'img12.jpg',  tags : ['CAMERAS', 'STORE', 'MANY', 'SCREEN'] },
 i13  : { name : 'img13.jpg',  tags : ['CAMERAS', 'STREET', 'TREE', 'MONITORING'] },
 i14  : { name : 'img14.jpg',  tags : ['SHANZHAI', 'CHAIR', 'DESIGN', 'STREET'] },
@@ -107,5 +107,4 @@ i105 : { name : 'img105.jpg', tags : ['TSHIRT', 'FUN', 'MAN', 'WHITE'] },
 i106 : { name : 'img106.jpg', tags : ['TSHIRT', 'FUN', 'MAN', 'BLACK'] },
 i107 : { name : 'img107.jpg', tags : ['WECHAT', 'FOOD', 'PHONE' , 'ASK'] },
 i108 : { name : 'img108.jpg', tags : ['WECHAT', 'METRO', 'LOGO', 'ADVERTISEMENT'] }
-
 };
