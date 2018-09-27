@@ -99,6 +99,8 @@ App.prototype = {
   },
 
   doSwipe: function(d) {
+
+
     this.handleEnd();
     placeImage(_MAIN, new Vec(0, 0));
 
@@ -116,6 +118,12 @@ App.prototype = {
     //     ' | img : ' +
     //     this.data.current_img.index
     // );
+
+    if (d == _UP)    d = _DOWN;
+    else if (d == _LEFT)  d = _RIGHT;
+    else if (d == _DOWN)  d = _UP;
+    else if (d == _RIGHT) d = _LEFT;
+
     this.data.add_movement(d);
     // console.log(
     //   'finish MOVEMENT | index : ' +

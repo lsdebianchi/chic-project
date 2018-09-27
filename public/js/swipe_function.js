@@ -1,15 +1,15 @@
 var waiting = false;
 
-$('#t_down').click(function() {
+$('#t_up').click(function() {
   myApp.doSwipe(_DOWN);
 });
-$('#t_left').click(function() {
+$('#t_right').click(function() {
   myApp.doSwipe(_LEFT);
 });
-$('#t_right').click(function() {
+$('#t_left').click(function() {
   myApp.doSwipe(_RIGHT);
 });
-$('#t_up').click(function() {
+$('#t_down').click(function() {
   myApp.doSwipe(_UP);
 });
 var ratioControlTiming = 300;
