@@ -1,0 +1,184 @@
+html,
+body {
+  margin: 0;
+  border-style: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: red;
+}
+div.body {
+  margin: 0;
+  position: relative;
+  border-style: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.animClick{
+  transition: 0.8s;
+  cursor: pointer;
+}
+/* .shifter{
+
+}
+.shifter:active{
+  top: -90vh;
+} */
+.animClick:active{
+  color: rgb(0, 0, 0, 0.1);
+  font-size: 200%;
+  transition: 0s;
+
+}
+a{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+
+}
+.unselectable {
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.photo {
+  width: 80vw;
+  height: 88vh;
+  position: absolute;
+  /* background-color: rgb(100, 100, 100, 0.1); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+div.waiting {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 20vh;
+  height: 30vh;
+  /* border-style: solid;
+  border-width: 4px; */
+  z-index: -10;
+}
+img.waiting {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 60px;
+}
+.img_photo {
+  width: 0%;
+  height: 0%;
+}
+
+#d_main {
+}
+#d_left {
+  top: 50%;
+  left: -50%;
+}
+#d_right {
+  top: 50%;
+  left: 150%;
+}
+#d_up {
+  top: -50%;
+  left: 50%;
+}
+#d_down {
+  top: 150%;
+  left: 50%;
+}
+
+/* #main img:hover {
+  width: 150%;
+  left: -25%;
+  top: 0%;
+} */
+
+.text {
+  color: gold;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: absolute;
+  overflow: visible;
+  font-size: 3vh;
+  /* background-color: rgb(100, 100, 100, 0.3); */
+
+  /* border-style: dashed;
+  border-color: rgb(180, 180, 180);
+  border-width: 0.5px; */
+}
+.ver a {
+  padding-top: 1vh;
+  position: relative;
+  top: 1vh;
+}
+.hor a {
+  position: relative;
+  top: 1vh;
+}
+
+#t_up {
+  width: 100%;
+  height: 6vh;
+  top: 4vh;
+}
+
+#t_right {
+  width: 100%;
+  height: 6vh;
+  position: absolute;
+  transform: rotate(90deg);
+  left: calc(50vw - 3vh);
+  top: 50vh;
+}
+#t_down {
+  width: 100%;
+  height: 6vh;
+  top: 90vh;
+}
+#t_left {
+  width: 100%;
+  height: 6vh;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: calc(-50vw + 3vh);
+  top: 50vh;
+}
+
+.banner{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+   color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 3vh;
+}

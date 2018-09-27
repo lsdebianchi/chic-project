@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'akz';
+  src: url('./font/AkzidenzGrotesk-Medium.otf'); /* IE9 Compat Modes */
+}
+
+div.line {
+  display: flex;
+  align-items: center;
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#half_black {
+  background-color: black;
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 100vw;
+  transition: 0.8s;
+}
+
+#l1,
+#l3 {
+  height: 10vh;
+  min-height: 30px;
+  justify-content: space-between;
+}
+
+#l2 {
+  height: 40vh;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#l2 img {
+  height: 35vh;
+  min-height: 120px;
+}
+
+#l1 img,
+#l3 img {
+  height: 7vh;
+  min-height: 20px;
+}
+
+#main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 98%;
+  min-width: 600px;
+  min-height: 300px;
+}
+
+#sphere,
+#sphere2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0vw;
+  height: 0vw;
+}
+
+#poem {
+  font-family: 'akz';
+  font-size: 8vh;
+  width: 90vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition-property: opacity;
+  transition-duration: 2s;
+  opacity: 0;
+}
+
+#b1 {
+  left: 9vh;
+  position: relative;
+}
+#b2 {
+  left: 9vh;
+  position: relative;
+}
+#b0 {
+  left: 0vh;
+  position: relative;
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+body,
+html {
+  margin: 0px;
+  border-style: none;
+  width: 100%;
+  height: 98%;
+}
+body {
+  cursor: none;
+}
+
+@media only screen and (max-width: 950px) {
+  #b1 {
+    left: 0vh;
+    position: relative;
+  }
+  #b2 {
+    left: 0vh;
+    position: relative;
+  }
+  #b0 {
+    left: 0vh;
+    position: relative;
+  }
+}
