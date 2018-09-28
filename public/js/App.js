@@ -120,7 +120,7 @@ App.prototype = {
     //     ' | img : ' +
     //     this.data.current_img.index
     // );
-    // 
+    //
     // if (d == _UP) d = _DOWN;
     // else if (d == _LEFT) d = _RIGHT;
     // else if (d == _DOWN) d = _UP;
@@ -210,3 +210,9 @@ console.log("READY");
 // console.log('---------------------------');
 
 //////
+
+document.addEventListener('keypress', (event) => {
+  const keyName = event.key;
+
+  alert('keypress event\n\n' + 'key: ' + keyName);
+});

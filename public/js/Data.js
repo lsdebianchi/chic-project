@@ -123,8 +123,8 @@ database.prototype = {
     var c = url.searchParams.get("img");
     c = parseInt(c);
     if(c === 0) c = 1;
-    if(c > 109) c = 109;
-    if(c) return this.imgs[parseInt(c)-1];
+    if(c > 108) c = 108;
+    if(c) return this.imgs[parseInt(c)];
     else return this.random_first_img();
   },
 
